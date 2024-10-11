@@ -1,10 +1,8 @@
-@import '../../css/root.css';
-
 .hero {
     position: relative;
     display: grid;
     place-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: 9;
   }
