@@ -1,0 +1,119 @@
+.mainCard {
+  position: relative;
+}
+
+.mainCard_titulo {
+  color: black;
+  text-align: center;
+  transform: translateX(-30%);
+}
+
+.mainCard_titulo h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.mainCard_titulo p {
+  color: black;
+  line-height: 30px;
+}
+.mainCard img.hojas_derecha1 {
+  width: 90%;
+  height: auto;
+  right: 10px;
+  top: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.banner {
+  width: 50%;
+  margin: 0 auto !important;
+  transform: translateX(-50%);
+  padding: 1.25rem;
+  background-color: #ffffff93;
+  backdrop-filter: blur(10px);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.banner p {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #666e0a;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .banner {
+    width: 70%;
+  }
+  .mainCard .options {
+    margin-top: 10%;
+  }
+  .MapaSvg {
+    height: 100vh;
+    & section {
+      margin-bottom: 5%;
+    }
+  }
+  .MapaSvgMovil {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .section1 .banner {
+    width: 83.333333%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    font-size: 1.5rem;
+    margin: 2.5rem;
+  }
+  .mainCard {
+    height: 75vh;
+  }
+
+  .mainCard_titulo {
+    position: absolute;
+    color: black;
+    text-align: center;
+    top: 25%;
+    width: 100%;
+    left: 0%;
+    padding: 0 15px;
+    transform: translateX(0%);
+  }
+
+  .mainCard_titulo h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .mainCard_titulo p {
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .hojas_derecha1 {
+    width: 100%;
+    height: auto;
+    right: 0px;
+    top: 20%;
+    height: auto;
+    position: absolute;
+  }
+
+  .banner {
+    width: 90%;
+    top: 7%;
+  }
+
+  .banner p {
+    line-height: 30px;
+  }
+}

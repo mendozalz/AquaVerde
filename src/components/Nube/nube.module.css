@@ -1,0 +1,40 @@
+.contenor-nubeMouse {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.nube {
+  background-image: url("./assets/nube.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 9;
+  width: 100vw;
+  height: 30vh;
+}
+
+.mouseGifBlanco {
+  position: absolute;
+  width: 70px;
+  z-index: 9;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .mouseGifBlanco {
+    bottom: 0%;
+  }
+
+  .section1 .banner {
+    width: 83.333333%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mouseGifBlanco {
+    position: absolute;
+    display: block;
+    bottom: 15%;
+    width: 70px;
+    z-index: 9;
+  }
+}

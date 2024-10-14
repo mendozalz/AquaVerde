@@ -1,6 +1,9 @@
 ---
+import Carrusel from "../components/Carrusel";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
+import NubePresentation from "../components/Nube/NubePresentation";
+import Section1 from "../components/Section1";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -8,5 +11,8 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <Menu client:only="react" />
     <Hero client:only="react" />
+    <NubePresentation />
+    <Section1 client:only="react" />
+    <Carrusel client:only="react" />
   </main>
 </Layout>
