@@ -1,10 +1,12 @@
 ---
-import Hero from '../components/Hero';
-import Layout from '../layouts/Layout.astro';
+import Hero from "../components/Hero";
+import Menu from "../components/Menu";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<Hero/>
-	</main>
+  <main>
+    <Menu client:only="react" />
+    <Hero client:only="react" />
+  </main>
 </Layout>

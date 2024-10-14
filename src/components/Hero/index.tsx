@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import video from "./public/assets/Introfilm-HD-KeyVisual.mp4";
-import videoMovil from "./public/assets/Introfilm-HD-KeyVisual-mobile.mp4"
+import video from "/assets/Introfilm-HD-KeyVisual.mp4";
+import videoMovil from "/assets/Introfilm-HD-KeyVisual-mobile.mp4";
 import HeroPresentation from "./HeroPresentation";
 
 const Hero = () => {
@@ -47,7 +47,16 @@ const Hero = () => {
     };
   }, []);
 
-  return <><HeroPresentation video={video} videoMovil={videoMovil} isChanging={isChanging} text={text}/></>;
+  return (
+    <>
+      <HeroPresentation
+        video={video}
+        videoMovil={videoMovil}
+        isChanging={isChanging}
+        text={text}
+      />
+    </>
+  );
 };
 
 export default Hero;
