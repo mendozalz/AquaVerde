@@ -19,7 +19,7 @@ const Section1Presentation = ({ hojasDerecha }: Props) => {
         </p>
       </div>
       <img
-        className={styles["hojas_derecha1"]}
+        className={styles["hojas_derecha"]}
         src={hojasDerecha}
         alt="hojas de arbol"
       />

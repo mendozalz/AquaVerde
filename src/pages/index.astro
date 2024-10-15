@@ -1,9 +1,14 @@
 ---
 import Carrusel from "../components/Carrusel";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
+import MapSVG from "../components/MapSVG";
+import MapSVGMovil from "../components/MapSVGMovil";
 import Menu from "../components/Menu";
-import NubePresentation from "../components/Nube/NubePresentation";
+import Nube from "../components/Nube";
 import Section1 from "../components/Section1";
+import Section2 from "../components/Section2";
+import Section3 from "../components/Section3";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -11,8 +16,13 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <Menu client:only="react" />
     <Hero client:only="react" />
-    <NubePresentation />
+    <Nube />
     <Section1 client:only="react" />
     <Carrusel client:only="react" />
+    <Section2 client:only="react" />
+    <Section3 />
+    <MapSVG />
+    <MapSVGMovil />
+    <Footer />
   </main>
 </Layout>

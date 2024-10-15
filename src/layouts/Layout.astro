@@ -23,13 +23,13 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global>
+<style>
   @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
   :root {
     --verdeBg: #666e0a;
-    --naranjaBg: #f4cb84;
+    --naranjaBg: #f7efe1;
     --dorado: #c0a46f;
     --negroFooter: #0e0e0d;
     --sb-size: 3px;
@@ -54,10 +54,14 @@ Use a better box model (opinionated).
     box-sizing: border-box;
   }
 
+  *,
+  body {
+    border: 1px solid red;
+  }
+
   html {
     /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: var(--Lato);
     line-height: 1.15; /* 1. Correct the line height in all browsers. */
     -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
     tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
@@ -70,6 +74,8 @@ Sections
 
   body {
     margin: 0; /* Remove the margin in all browsers. */
+    background: var(--naranjaBg);
+    overflow-x: hidden;
   }
 
   /*

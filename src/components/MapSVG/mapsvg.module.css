@@ -1,0 +1,118 @@
+.MapaSvg {
+  width: 100%;
+  height: 130vh;
+  z-index: 1;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  & svg.SVGMAPA {
+    width: 80%;
+  }
+  & section {
+    width: fit-content;
+    & h1,
+    & h2 {
+      font-family: var(--Playfair);
+      font-size: 64px;
+      color: var(--verdeBg);
+      overflow: hidden;
+      height: 65px;
+    }
+
+    & h2 {
+      margin-left: 55px;
+    }
+  }
+}
+
+.hojas_abajo {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.MapaSvgMovil {
+  display: none;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .MapaSvg {
+    height: 100vh;
+    & section {
+      margin-bottom: 0%;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .MapaSvg {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    & svg.SVGMAPA {
+      width: 80%;
+    }
+    & section {
+      width: fit-content;
+      & h1,
+      & h2 {
+        font-family: var(--Playfair);
+        font-size: 64px;
+        color: var(--verdeBg);
+        overflow: hidden;
+        height: 65px;
+      }
+
+      & h2 {
+        margin-left: 55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MapaSvg {
+    display: none;
+  }
+
+  .MapaSvgMovil {
+    display: block;
+    width: 100%;
+    height: 135vh;
+    position: relative;
+    z-index: 9999;
+    & svg.SVGMAPAMOVIL {
+      width: 90%;
+      margin: 5% 0 0 5%;
+    }
+    & section {
+      width: fit-content;
+      margin: auto;
+      margin-top: 30px;
+      & h1,
+      & h2 {
+        font-family: var(--Playfair);
+        font-size: 35px;
+        color: var(--verdeBg);
+        overflow: hidden;
+        line-height: 30px;
+        height: 34px;
+      }
+      & h2 {
+        margin-left: 25px;
+      }
+    }
+    & .MapaSvgMovil_hojas_abajo {
+      width: 100%;
+      position: absolute;
+      bottom: -0.5%;
+      left: 0;
+    }
+  }
+}
