@@ -4,7 +4,7 @@
   place-items: center;
 }
 .nube {
-  background-image: url("./assets/nube.png");
+  background-image: url("/assets/nube.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
