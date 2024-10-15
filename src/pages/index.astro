@@ -9,6 +9,7 @@ import Nube from "../components/Nube";
 import Section1 from "../components/Section1";
 import Section2 from "../components/Section2";
 import Section3 from "../components/Section3";
+import VideoBg from "../components/VideoBg";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -23,6 +24,7 @@ import Layout from "../layouts/Layout.astro";
     <Section3 />
     <MapSVG />
     <MapSVGMovil />
+    <VideoBg client:only="react" />
     <Footer />
   </main>
 </Layout>

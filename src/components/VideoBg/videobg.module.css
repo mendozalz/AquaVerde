@@ -1,0 +1,30 @@
+.videoColibri {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.videoColibriMovil {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .videoColibri {
+    display: none;
+  }
+
+  .videoColibriMovil {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+}
