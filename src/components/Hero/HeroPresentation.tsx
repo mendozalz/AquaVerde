@@ -1,4 +1,4 @@
-import FormularioPresentation from "../Formulario/FormularioPresentation";
+import Formulario from "../Formulario";
 import styles from "./hero.module.css";
 import { useRef } from "react";
 
@@ -34,7 +34,7 @@ const HeroPresentation = ({ video, videoMovil, isChanging, text }: Props) => {
         >
           {text}
         </h1>
-        <FormularioPresentation/>
+        <Formulario />
       </div>
     </header>
   );

@@ -52,7 +52,9 @@ label {
 
 input {
   margin-right: 8px;
-  box-shadow: inset 2px 2px 5px #f0e4ba8a, inset -5px -5px 10px #f0e4ba;
+  box-shadow:
+    inset 2px 2px 5px #f0e4ba8a,
+    inset -5px -5px 10px #f0e4ba;
   width: 100%;
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
@@ -60,22 +62,30 @@ input {
   -webkit-appearance: none;
 }
 input:focus {
-  box-shadow: inset 1px 1px 2px #f0e4ba8a, inset -1px -1px 2px #f0e4ba;
+  box-shadow:
+    inset 1px 1px 2px #f0e4ba8a,
+    inset -1px -1px 2px #f0e4ba;
 }
 
 button {
   color: #61677c;
   font-weight: bold;
-  box-shadow: -5px 2px 20px #d3c9a4, 2px 2px 5px #f0e4ba8a;
+  box-shadow:
+    -5px 2px 20px #d3c9a4,
+    2px 2px 5px #f0e4ba8a;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;
 }
 button:hover {
-  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+  box-shadow:
+    -2px -2px 5px #fff,
+    2px 2px 5px #babecc;
 }
 button:active {
-  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+  box-shadow:
+    inset 1px 1px 2px #babecc,
+    inset -1px -1px 2px #fff;
 }
 button .icon {
   margin-right: 8px;
@@ -112,7 +122,7 @@ button.red {
 
 @media screen and (max-width: 600px) {
   form {
-    padding: 16px;
+    padding: 0px;
     width: 350px;
     z-index: 1;
   }
@@ -123,7 +133,7 @@ button.red {
     overflow: hidden;
   }
   .segment {
-    padding: 20px 0;
+    padding: 0px 0;
     text-align: center;
   }
 }
