@@ -20,6 +20,7 @@ const HeroPresentation = ({ video, videoMovil, isChanging, text }: Props) => {
         src={video}
         autoPlay
         muted
+        playsInline
       />
       <video
         className={styles.videoHeroMovil}
@@ -27,6 +28,7 @@ const HeroPresentation = ({ video, videoMovil, isChanging, text }: Props) => {
         src={videoMovil}
         autoPlay
         muted
+        playsInline
       />
       <div className={styles.titulo}>
         <h1
