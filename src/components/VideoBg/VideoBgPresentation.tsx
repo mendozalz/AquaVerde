@@ -9,15 +9,17 @@ const VideoBgPresentation = () => {
         className={styles.backgroundVideo}
         src={video}
         autoPlay
-        muted
         loop
+        muted
+        playsInline
       />
       <video
         className={styles.backgroundVideoMovil}
         src={videoMovil}
         autoPlay
-        muted
         loop
+        muted
+        playsInline
       />
     </div>
   );
