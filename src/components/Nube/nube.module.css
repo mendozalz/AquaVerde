@@ -1,5 +1,5 @@
 .contenor-nubeMouse {
-  width: 100%;
+  width: 100vw;
   display: grid;
   place-items: center;
   margin-top: -130px;
@@ -36,7 +36,6 @@
   }
   .mouseGifBlanco {
     display: block;
-    bottom: 15%;
     width: 70px;
     z-index: 9;
   }
