@@ -2,6 +2,7 @@
   width: 100%;
   display: grid;
   place-items: center;
+  margin-top: -190px;
 }
 .nube {
   background-image: url("/assets/nube.png");
@@ -11,7 +12,6 @@
   z-index: 9;
   width: 100vw;
   height: 30vh;
-  margin-top: -110px;
 }
 
 .mouseGifBlanco {
