@@ -1,6 +1,5 @@
 .mainCard {
   position: relative;
-  margin-top: 150px;
   z-index: 1;
 }
 
@@ -70,9 +69,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .mainCard {
-    margin-top: 100px;
-  }
   .banner {
     font-size: 1.5rem;
     margin: 2.5rem;

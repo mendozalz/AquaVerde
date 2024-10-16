@@ -77,7 +77,7 @@
     display: grid;
     place-items: baseline;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     z-index: 9;
   }
   .titulo {

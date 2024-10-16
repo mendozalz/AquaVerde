@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 600px) {
   .section2 {
-    min-height: 55vh;
+    min-height: 60vh;
   }
   .hojas_abajo {
     margin-bottom: -4px;
