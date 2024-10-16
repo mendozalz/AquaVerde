@@ -4,16 +4,22 @@ import videoMovil from "/assets/Sektionfilm-2-HD-KeyVisual-mobile.mp4";
 
 const VideoBgPresentation = () => {
   return (
-    <>
-      <video className={styles.videoColibri} src={video} autoPlay muted loop />
+    <div className={styles.videoContainer}>
       <video
-        className={styles.videoColibriMovil}
+        className={styles.backgroundVideo}
+        src={video}
+        autoPlay
+        muted
+        loop
+      />
+      <video
+        className={styles.backgroundVideoMovil}
         src={videoMovil}
         autoPlay
         muted
         loop
       />
-    </>
+    </div>
   );
 };
 
