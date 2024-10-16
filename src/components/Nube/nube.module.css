@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   place-items: center;
-  margin-top: -190px;
+  margin-top: -130px;
 }
 .nube {
   background-image: url("/assets/nube.png");
@@ -15,9 +15,10 @@
 }
 
 .mouseGifBlanco {
-  position: absolute;
   width: 70px;
   z-index: 9;
+  display: block;
+  margin-top: -190px;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
@@ -30,7 +31,11 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .contenor-nubeMouse {
+    margin-top: -190px;
+  }
   .mouseGifBlanco {
+    display: block;
     bottom: 15%;
     width: 70px;
     z-index: 9;
